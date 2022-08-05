@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <section class="main-contaier">
+        <h1 class="header-title section-header-title-en">JavaScript</h1>
+        <h3 class="section-header-title">
+            <span class="en-little-text">دستورات شرطی</span>
+        </h3>
+        <ul class="section-menu-container">
+            <li class="section-menu-item section-menu-item-header">
+                در زبانه روال اجرا میتوان توسط دستوراتی کنترل کرد که در اجرا شد خروجی مناسبی لحاظ کند که در جاوا شامل
+                کیورد هایی است که بهش میپردازیم
+            </li>
+            <li class="section-menu-item">نکته: هر بدنه به وسیله}برای تعریق بدنه شروع میش }برای پایان بدنه با این مشخص
+                میشود</li>
+        </ul>
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">if(عبارت شرطی){};<br><br>
+                        let a=10;<br><br>
+                        if(a==10){
+                        alert('true');<br><br>
+                        }<br><br>
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            <span class="en-little-text">:if</span>
+
+            ساختار دستور به وسیله این دستور میتوان شرطی را بررسی کرد و در صورت صحیح بودن (true),وارد بدنه تعریف شده
+            میشود و در صورت صحیح نبودن(false) به اولین خط بعد از بدنه تعریف شده مراجع میکند . عبارت شرطی باید به یک
+            نتیجه (true),(false)برسد.
+
+        </p>
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        let a=10;<br><br> let b=20;<br><br>
+                        if(a==b){
+                        alert('true');<br><br>
+                        }<br><br>
+                        else{
+                        alert('false');<br><br>
+                        }<br><br>
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            <span class="en-little-text">:else</span>
+
+            می توان بعد از چک کردن شرط(Condition) ببهدر صورتی که شرط برقرار نبود بلوک دیگری لحاظ کردتا کد های مدیریتی
+            برای ان نوشته شود. این امر با نوشتن شرطی مخالف قابل جراست
+            اما باعث زیاد تر شدن کد ها میشود
+        </p>
+
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        let a=10; <br><br>let b=11;<br><br>
+                        if(a < b){ alert('true'); }<br><br> else if(a==10){ <br><br>alert('true'); } </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            می توان در ساختارif در صورت درست نبود شرط دیگری را چک یا برسی کرد و تک تک در صورت برقرار بودن شرط بدنه خود
+            را داشته باشد و اجرا شوداما فقط در صورت صحیح بودن یکی از شرط همان بدنه اجرا میشود وسراغ بدنه شرط دیگری که
+            مرطبت با ساختار شروط نمیشود این برسی به ترتیب انجام میشود
+        </p>
+
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        switch (new Date().getDay()) {<br><br>
+                            case 4:<br><br>
+                            case 5:<br><br>
+                              text = "Soon it is Weekend";<br><br>
+                              break;<br><br>
+                            case 0:<br><br>
+                            case 6:<br><br>
+                              text = "It is Weekend";<br><br>
+                              break;<br><br>
+                            default:<br><br>
+                              text = "Looking forward to the Weekend";<br><br>
+                          }
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            <span class="en-little-text">Switch-case</span>
+            با توجه به ساختار if else میتوان ساختار مناسب تری تعریف نمود که وابسته به یک شرط میباشد و با توجه به شرط
+            بدنه خاص خود را اجرا میکند
+            <span class="en-little-text">نکته: </span>
+            کیس به ترتیب مقداران ها چاک میشود در صورت صحیح بودن وارد بدنه ان میشودو برای اتمام ان بدنه از دستور break
+            استفاده میکنیم <br>
+            <span class="en-little-text">نکته: </span>
+            defult;در انتها ترین حالت بدنه در switch اجرا میشود و اختیاری است
+        </p>
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        const cars = ["Saab", "Volvo", "BMW"];<br>
+                        const cars = [];<br><br>
+                        cars[0]= "Saab";<br><br>
+                        cars[1]= "Volvo";<br><br>
+                        cars[2]= "BMW";<br><br>
+                        const cars = new Array("Saab", "Volvo", "BMW");<br><br>
+                        const cars = new Array("Saab", "Volvo", "BMW");<br><br>
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            <span class="en-little-text">Array</span>
+            یک آرایه می تواند مقادیر زیادی را تحت یک نام نگه دارد و شما می توانید با مراجعه به یک عدد شاخص به مقادیر
+            دسترسی پیدا کنید.در js . میتوان نوعی تعریف کرد که شامل اعضای با نوع های مختلف باشد
+        </p>
+        <!-- اگه تایتل انگلیسی میخوای بنویسی از کلاس دومی که دادم استفاده کن -->
+        <!-- <h3 class="section-header-title section-header-title-en"></h3> -->
+        <h3 class="section-header-title section-header-title-en">For Loop:</h3>
+        <p class="section-tip-container">
+            برای تکرار یک روال به دفعات میتوانیم از حلقه ها استفاده کنیم. حلقه ها اشکال مختلفی دارند، اولین حلقه ای که
+            میخواهیم به معرفی آن بپردازیم حلقه <span class="en-little-text">For</span> نام دارد.
+        </p>
+        <p class="section-tip-container">
+            برای درک بهتر حلقه ها به مثال زیر توجه کنید.
+        </p>
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        text += cars[0] + "&lt;br>"; <br><br>
+                        text += cars[1] + "&lt;br>"; <br><br>
+                        text += cars[2] + "&lt;br>"; <br><br>
+                        text += cars[3] + "&lt;br>"; <br><br>
+                        text += cars[4] + "&lt;br>"; <br><br>
+                        text += cars[5] + "&lt;br>"; <br><br>
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+            در کدی که بالا دیدین، یک روال مشخص تکرار شده بود و تنها تفاوت در هر خط، شماره <span
+                class="en-little-text">index</span> آرایه بود. برای اینکه از تکرار روال ها جلوگیری کنیم، از حلقه استفاده
+            میکنیم.
+        </p>
+        <ul class="section-menu-container">
+            <li class="section-menu-item section-menu-item-header">
+                حلقه <span class="en-little-text">for</span> سه قسمت دارد:
+            </li>
+            <li class="section-menu-item">
+                قسمت اول حلقه، که یکبار فقط فراخوانی و اجرا میشود که قبل از شروع حلقه است.
+            </li>
+            <li class="section-menu-item">
+                قسمت دوم مربوط به شرطی است که میخوایم تا زمانی که این شرط درست است حلقه اجرا شود.
+            </li>
+            <li class="section-menu-item">
+                قسمت سوم نیز هر باری که روال حلقه یکبار تمام شود، اجرا خواهد شد.
+            </li>
+        </ul>
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        for (statement 1; statement 2; statement 3) {<br><br>
+                        
+                          }<br><br>
+
+                        for (let i = 0; i &lt; cars.length; i++) { <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text += cars[i] + "&lt;br>";<br><br>
+                          } 
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        while (condition) {<br><br>
+                            
+                          }<br><br>
+                          while (i < 10) {<br><br>
+                            text += "The number is " + i;<br><br>
+                            i++;<br><br>
+                          }
+
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+          <span class="en-little-text">While</span>
+حلقه دیگری وجود دارد که وابسته به شرط است وگام ومقداراولیه در بدنه حلقه قبل از ان تعریف میشودو تکرار در ان تا زمانی که ه(true) بدنه اجرا میشود
+        </p>
+
+  <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        for (key in object) {<br><br>
+                            
+                          }<br><br>
+                          const person = {fname:"John", lname:"Doe", age:25};<br><br>
+
+                          let text = "";<br><br>
+                          for (let x in person) {<br><br>
+                            text += person[x];<br><br>
+                          }<br><br>
+
+
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+          <span class="en-little-text">For(in)</span>
+              میتوان تک تک اعضای یک ارایه راگرفت و داخل متغییری در بدنه از ان استفاده کرد یا دونه دونه کلید های هر ابجگت را گرفت و در بدنه با استفاده [] مقدار از ان گرفت 
+
+        </p>
+
+        <div class="section-code-container">
+            <div class="center section-code-row">
+                <div class="code-body-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path
+                            d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                    </svg>
+                    <!-- Write your code in this box -->
+                    <span class="code-input">
+                        for (variable of iterable) {<br>
+                            <br>
+                          }<br>
+
+                          const cars = ["BMW", "Volvo", "Mini"];<br><br>
+
+let text = "";<br><br>
+for (let x of cars) {<br><br>
+  text += x;<br><br>
+}
+
+                    </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard" viewBox="0 0 16 16" cssClass="copy-icon">
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clipboard-check" viewBox="0 0 16 16" cssClass="copy-icon-done">
+                    <path fill-rule="evenodd"
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                    <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+            </div>
+        </div>
+        <p class="section-tip-container">
+          <span class="en-little-text">For(of)</span>
+             به وسیله ان یک ابجکت یا مورد شمارش پذیر و دونه دونه مقدار ان راخروجی میدهیم. در ارایه هتی مقدار هر عضو در رشته تک تک کاراکتر تن رشته خروجی می دهد
+        </p>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+<!-- اگه عکس داری از این قالب استفاده کن -->
+<!-- <div class="center section-image-container">
+            <img class="section-image" src="" width="100%" alt="add-new-repo" title="" />
+        </div> -->
